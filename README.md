@@ -1,2 +1,2 @@
-# Ecrintrn.github.io
+# Ecrintrn
 My Personal Website
