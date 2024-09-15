@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="personal, blog, python, sql, data science, personal website">
+    <meta name="description" content="Personal website of Ecrin Taran">
+    <meta name="author" content="Ecrin Taran">
+    <meta name="robots" content="index, follow">
+    <title>Ecrin's Website</title>
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="./CSS/main.css">
+     <link rel="stylesheet" href="./CSS/global.css">
+     <link rel="stylesheet" href="./CSS/responsive.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a class="logo"><i class="fa-solid fa-house-chimney-user"></i> Blog</a></li>
+            <li class="hideOnMobile"><a href="#Home">Home</a></li>
+            <li class="hideOnMobile"><a href="#About">About Me</a></li>
+            <li class="hideOnMobile"><a href="#Projects">Projects</a></li>
+            <li class="hideOnMobile"><a href="#Contact">Contact Me</a></li>
+            <li class="menu-button"><a onclick=showSideBar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 0 448 512" width="26"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li><a onclick=hideSideBar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 0 384 512" width="26"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section class="home" id="Home">
+        <div class="content">
+            <h1>Ecrin's Website</h1>
+            <p>Hello, my name is Ecrin Taran.</p>
+            <a href="#About" class="btn btn-home">Learn About Me</a>
+        </div>
+    </section>
+
+    <section class="about" id="About">
+        <div class="row">
+            <div class="image">
+                <img src="./images/Curly.jpg" alt="Ecrin">
+            </div>
+            <div class="content">
+                <h1>About Me</h1>
+                <p>I am Ecrin Taran. My interest in software and data analysis led me to improve myself in this field and work on various projects. Working on projects related to technology and data analysis increases my desire to learn and develop.</p>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-school"></i>
+                        <p>School : İzmir Fen Lisesi</p>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>E-mail : taranecrin2@gmail.com</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <p>Birth Date : 07.05.2024</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-city"></i>
+                        <p>City : İzmir/Türkiye</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>  
+
+    <section class="projects" id="Projects">
+        <h1>Projects</h1>
+        <div class="wrapper">
+            <div class="card">
+                <img src="./images/baseball_rf_image.jpg" alt="">
+                <div class="info">
+                    <h1>Prediction Baseball Player salaries</h1>
+                    <p>Predicting Baseball Players using machine mearning algorithms: A mocus on the Random Forest algorithm.</p>
+                    <a href="https://github.com/Ecrintrn/prediction-baseball-player-salaries-via-rf" class="btn btn-card" target="_blank" rel="noopener noreferrer">Open on Github</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/Hospital_management_system.jpg" alt="">
+                <div class="info">
+                    <h1>Hospital Management System</h1>
+                    <p>The hospital management system manages patient and doctor data, appointments, and medical records, and supports CRUD operations for services and products.</p>
+                    <a href="https://github.com/Ecrintrn/Hospital-Management-System" class="btn btn-card" target="_blank" rel="noopener noreferrer">Open on Github</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/heart_failure.jpg" alt="">
+                <div class="info">
+                    <h1>Prediction Heart Failure</h1>
+                    <p>Predicting Heart Failure using machine mearning algorithms: A mocus on the Random Forest algorithm.</p>
+                    <a href="https://github.com/Ecrintrn/Prediction_Heart_Failure_Using_RF" class="btn btn-card" target="_blank" rel="noopener noreferrer">Open on Github</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/weighted_rating_calculation.jpg" alt="">
+                <div class="info">
+                    <h1>Weighted Average Rating Calculation</h1>
+                    <p>The Weighted Average Rating method assigns varying weights to ratings, ensuring that more significant ratings have a greater impact on the final result for a fairer evaluation.</p>
+                    <a href="https://github.com/Ecrintrn/Weighted_Average_Rating_Calculation" class="btn btn-card" target="_blank" rel="noopener noreferrer">Open on Github</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="Contact">
+        <h1>Contact Me</h1>
+        <div class="container">
+            <div class="contactForm">
+                <form >
+                    <h2>Send Message</h2>
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="text" id="email" placeholder="Email" required>
+                    <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+                    <button type="submit" class="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="share">
+            <a href="https://www.instagram.com/taran.ecrin/" class="fab fa-instagram" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://github.com/Ecrintrn" class="fa-brands fa-github" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://www.kaggle.com/ecrintaran" class="fa-brands fa-kaggle" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="credit">
+            Created by <span>Ecrin Taran</span> | All Rigths Deserved
+        </div>
+    </footer>
+
+    <!-- Navbar JS -->
+    <script>
+        function showSideBar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSideBar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = "none"
+        }
+    </script>
+</body>
+</html>
