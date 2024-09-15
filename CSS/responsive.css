@@ -1,0 +1,156 @@
+@media (max-width: 880px) {
+    /* Navbar And Menu Responsive*/
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        border-radius: 5px;
+        z-index: 10;
+        text-decoration: none;
+    }
+    .menu-button:hover, .menu-button:active{
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 10;
+    }
+    nav ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav li {
+        height: 50px;
+    } 
+    nav li:last-child a{
+        border-bottom: none;
+        padding-bottom: 0;   
+    }
+    nav li:last-child a:hover{
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+        font-size: 1.4rem;
+        color: var(--main-color);
+        border-bottom: 0.1rem solid transparent;
+    }
+    nav a:hover {
+        border-color: var(--main-color);
+        padding-bottom: 0.5rem;
+    }
+    nav .sidebar a:hover{
+        border-color: var(--main-color);
+        padding-bottom: 0.5rem;
+    }
+    nav .sidebar li:last-child a:hover{
+        border-bottom: 0.1rem solid transparent;
+        border-color: var(--main-color);
+        padding-bottom: 0.5rem;
+    }
+   
+    /* Projects Responsive*/
+    .projects h1 {
+        font-size: 2rem; /* Başlık boyutunu küçültme */
+        margin-left: 1rem; /* Sol margin küçültme */
+    }
+    .projects .wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Daha küçük grid düzeni */
+        gap: 10px; /* Grid aralığını küçültme */
+    }
+    .projects .wrapper .card {
+        height: 250px; /* Kart yüksekliğini küçültme */
+        padding: 1rem; /* Paddingi küçültme */
+    }
+    .projects .wrapper .card h1 {
+        font-size: 1.5rem; /* Başlık boyutunu küçültme */
+    }
+    .projects .wrapper .card p {
+        font-size: 12px; /* Yazı boyutunu küçültme */
+    }
+
+    /* Contact Responsive*/
+    .contact h1 {
+        font-size: 2.5rem; /* Başlık boyutunu küçültme */
+        margin-left: 0.5rem; /* Sol margin küçültme */
+        margin-bottom: 1.5rem; /* Alt margin küçültme */
+    }
+    .contact .container form {
+        padding: 1.5rem 2rem; /* Paddingi küçültme */
+        width: 90%; /* Form genişliğini ayarlama */
+        max-width: 100%; /* Maksimum genişliği artırma */
+        box-sizing: border-box; /* Padding ve border'ı genişliğe dahil etme */
+    }
+    .contact .container form input,
+    .contact .container form textarea {
+        font-size: 14px; /* Yazı boyutunu küçültme */
+        padding: 15px; /* Paddingi küçültme */
+        width: 100%; /* Genişliği %100 yap */
+        box-sizing: border-box; /* Padding ve border'ı genişliğe dahil etme */
+    }
+    .contact .container form .submit {
+        font-size: 14px; /* Buton yazı boyutunu küçültme */
+        padding: 10px; /* Buton paddingi küçültme */
+    }
+}
+
+@media (max-width: 400px) {
+    /* Navbar And Menu Responsive */
+    .menu-button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+    nav a {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    /* Contact Responsive */
+    .contact h1 {
+        font-size: 2rem; /* Başlık boyutunu daha da küçültme */
+        margin-left: 0.5rem; /* Sol margin */
+        margin-bottom: 1rem; /* Alt margin */
+    }
+    .contact .container form {
+        padding: 1rem; /* Paddingi daha da küçültme */
+        width: 95%; /* Form genişliğini artırma */
+        max-width: 100%; /* Maksimum genişliği artırma */
+        box-sizing: border-box; /* Padding ve border'ı genişliğe dahil etme */
+    }
+    .contact .container form input,
+    .contact .container form textarea {
+        font-size: 12px; /* Yazı boyutunu küçültme */
+        padding: 10px; /* Paddingi küçültme */
+        width: 100%; /* Genişliği %100 yap */
+        box-sizing: border-box; /* Padding ve border'ı genişliğe dahil etme */
+    }
+    .contact .container form .submit {
+        font-size: 12px; /* Buton yazı boyutunu küçültme */
+        padding: 8px; /*Buton paddingi küçültme */
+    }
+}
+
+
+@media (max-width: 400px) {
+    
+}
